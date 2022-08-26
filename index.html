@@ -82,40 +82,46 @@
         ></div>
       </div>
 
+      <!-- A grid of kittens stamp -->
       <div style="margin: auto; width: 500px; height: 500px;">
-        <div style="position: relative; height: 100%;">
+        <div
+          style="
+            height: 100%;
+            box-shadow: 2px 2px 4px grey;
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            grid-template-rows: 20% 20% 20% 20% 20%;
+          "
+        >
           <img
-            style="position: absolute; left: 20px; top: 50px;"
-            src="https://placekitten.com/100/100"
-          />
-          <img
-            style="position: absolute; right: 32px; top: 50px;"
-            src="https://placekitten.com/110/110"
+            style="
+              grid-column-start: 2;
+              grid-column-end: span 3;
+              grid-row-start: 2;
+              grid-row-end: 4;
+              height: 100%;
+            "
+            src="https://placekitten.com/600/600"
           />
           <img
             style="
-              position: absolute;
-              right: 10%;
-              bottom: 100px;
-              border-radius: 50%;
+              grid-column-start: 1;
+              grid-column-end: span 1;
+              grid-row-start: 1;
+              grid-row-end: span 1;
+              height: 100%;
             "
-            src="https://placekitten.com/200/200"
+            src="https://placekitten.com/400/400"
           />
           <img
-            style="position: absolute; left: 50%; bottom: 50%;"
-            src="https://placekitten.com/105/105"
-          />
-          <img
-            style="position: absolute; left: 0; bottom: 0;"
-            src="https://placekitten.com/150/150"
-          />
-          <img
-            style="position: absolute; left: 20%; bottom: 40%;"
-            src="https://placekitten.com/102/102"
-          />
-          <img
-            style="position: absolute; left: 50%; bottom: 10px;"
-            src="https://placekitten.com/130/130"
+            style="
+              grid-column-start: 2;
+              grid-column-end: span;
+              grid-row-start: 4;
+              grid-row-end: span;
+              height: 100%;
+            "
+            src="https://placekitten.com/700/700"
           />
         </div>
       </div>
